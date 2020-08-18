@@ -18,7 +18,7 @@ import {
 import {SimpleParser} from './parser';
 import tpl from './template';
 
-export class V5Roller extends Roller<Dice, Faces, DicePool> {
+export class AlienRoller extends Roller<Dice, Faces, DicePool> {
     constructor(private rng: RandomNumberGenerator, command: string) {
         super(
             command,
