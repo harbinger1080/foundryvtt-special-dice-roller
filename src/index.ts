@@ -1,3 +1,4 @@
+import {AlienRoller} from './alien/roller';
 import {GenesysRoller, genesysRoller, starWarsRoller} from './genesys/roller';
 import {HeroQuestRoller} from './heroquest/roller';
 import {HEXRoller} from './hex/roller';
@@ -5,8 +6,6 @@ import {L5RRoller} from './l5r/roller';
 import {secureRandomNumber} from './rng';
 import {IndexedRoll, IRoller, ReRoll} from './roller';
 import {V5Roller} from './v5/roller';
-import {AlienRoller} from './alien/roller';
-
 
 // begin foundry types
 interface IHooks {

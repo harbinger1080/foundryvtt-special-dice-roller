@@ -9,11 +9,11 @@ import {
     DicePool,
     dieRollImages,
     Faces,
-    STRESS_ROLL_TABLE,
     InterpretResult,
     parseRollValues,
     rollValuesMonoid,
     SKILL_ROLL_TABLE,
+    STRESS_ROLL_TABLE,
 } from './dice';
 import {SimpleParser} from './parser';
 import tpl from './template';
