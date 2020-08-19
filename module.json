@@ -2,7 +2,7 @@
   "name": "special-dice-roller",
   "title": "Special Dice Roller",
   "description":  "Special Dice Roller, but now with ALIENS!",
-  "version": "0.11.3.5",
+  "version": "0.11.3.6",
   "author": "Bernhard Posselt - Forked by Justin Walden",
   "scripts": ["./dist/main.js"],
   "styles": ["./public/css/styles.css"],
