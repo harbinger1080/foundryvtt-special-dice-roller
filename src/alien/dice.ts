@@ -52,7 +52,7 @@ export class RollValues {
 }
 
 const skillImages = new Map<Faces, string>();
-skillImages.set(Faces.FAILURE, 'skillfail');
+skillImages.set(Faces.FAILURE, 'skillfail'); //what's happening here?
 skillImages.set(Faces.SUCCESS, 'skill6');
 
 const stressImages = new Map<Faces, string>();
