@@ -56,7 +56,7 @@ skillImages.set(Faces.FAILURE, 'blackf');
 skillImages.set(Faces.SUCCESS, 'blacks');
 
 const stressImages = new Map<Faces, string>();
-stressImages.set(Faces.STRESS_FAILURE_1, 'redf1');
+stressImages.set(Faces.STRESS_FAILURE_1, 'stress1');
 stressImages.set(Faces.FAILURE, 'redf');
 stressImages.set(Faces.SUCCESS, 'reds');
 
