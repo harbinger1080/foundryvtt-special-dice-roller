@@ -1,11 +1,11 @@
 import {AlienRoller} from './alien/roller';
-import {GenesysRoller, genesysRoller, starWarsRoller} from './genesys/roller';
-import {HeroQuestRoller} from './heroquest/roller';
-import {HEXRoller} from './hex/roller';
-import {L5RRoller} from './l5r/roller';
+// import {GenesysRoller, genesysRoller, starWarsRoller} from './genesys/roller';
+// import {HeroQuestRoller} from './heroquest/roller';
+// import {HEXRoller} from './hex/roller';
+// import {L5RRoller} from './l5r/roller';
 import {secureRandomNumber} from './rng';
 import {IndexedRoll, IRoller, ReRoll} from './roller';
-import {V5Roller} from './v5/roller';
+// import {V5Roller} from './v5/roller';
 
 // begin foundry types
 interface IHooks {
@@ -41,23 +41,23 @@ declare var game: IGame;
 // end foundry types
 
 interface IExportedRollers {
-    l5r: L5RRoller;
-    v5: V5Roller;
-    genesys: GenesysRoller;
-    starWars: GenesysRoller;
-    heroQuest: HeroQuestRoller;
-    heXXen: HEXRoller;
     alien: AlienRoller;
+    // l5r: L5RRoller;
+    // v5: V5Roller;
+    // genesys: GenesysRoller;
+    // starWars: GenesysRoller;
+    // heroQuest: HeroQuestRoller;
+    // heXXen: HEXRoller;
 }
 
 const specialDiceRoller = {
-    l5r: new L5RRoller(secureRandomNumber, 'l5r'),
-    v5: new V5Roller(secureRandomNumber, 'v5'),
-    genesys: genesysRoller(secureRandomNumber, 'gen'),
-    starWars: starWarsRoller(secureRandomNumber, 'sw'),
-    heroQuest: new HeroQuestRoller(secureRandomNumber, 'hq'),
-    heXXen: new HEXRoller(secureRandomNumber, 'hex'),
     alien: new AlienRoller(secureRandomNumber, 'alien'),
+    // l5r: new L5RRoller(secureRandomNumber, 'l5r'),
+    // v5: new V5Roller(secureRandomNumber, 'v5'),
+    // genesys: genesysRoller(secureRandomNumber, 'gen'),
+    // starWars: starWarsRoller(secureRandomNumber, 'sw'),
+    // heroQuest: new HeroQuestRoller(secureRandomNumber, 'hq'),
+    // heXXen: new HEXRoller(secureRandomNumber, 'hex'),
 };
 
 Hooks.on('init', () => {
