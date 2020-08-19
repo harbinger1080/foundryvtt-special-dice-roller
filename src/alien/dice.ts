@@ -51,18 +51,18 @@ export class RollValues {
     }
 }
 
-const skillAlienImages = new Map<Faces, string>();
-skillAlienImages.set(Faces.SUCCESS, 'skill6')
-skillAlienImages.set(Faces.FAILURE, 'skillfail');
+const skillImages = new Map<Faces, string>();
+skillImages.set(Faces.SUCCESS, 'skill6');
+skillImages.set(Faces.FAILURE, 'skillfail');
 
-const stressAlienImages = new Map<Faces, string>();
-stressAlienImages.set(Faces.FAILURE, 'stressfail');
-stressAlienImages.set(Faces.SUCCESS, 'stress6');
-stressAlienImages.set(Faces.STRESS_FAILURE_1, 'stress1');
+const stressImages = new Map<Faces, string>();
+stressImages.set(Faces.FAILURE, 'stressfail');
+stressImages.set(Faces.SUCCESS, 'stress6');
+stressImages.set(Faces.STRESS_FAILURE_1, 'stress1');
 
 export const dieRollImages = new Map<Dice, Map<Faces, string>>();
-dieRollImages.set(Dice.STRESS, stressAlienImages);
-dieRollImages.set(Dice.SKILL, skillAlienImages);
+dieRollImages.set(Dice.STRESS, stressImages);
+dieRollImages.set(Dice.SKILL, skillImages);
 
 const rollToRollResultMapping = new Map<Faces, Partial<RollValues>>();
 rollToRollResultMapping.set(Faces.SUCCESS, {successes: 1});
