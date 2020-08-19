@@ -52,13 +52,13 @@ export class RollValues {
 }
 
 const skillImages = new Map<Faces, string>();
-skillImages.set(Faces.FAILURE, 'blackf');
-skillImages.set(Faces.SUCCESS, 'blacks');
+skillImages.set(Faces.FAILURE, 'skillfail');
+skillImages.set(Faces.SUCCESS, 'skill6');
 
 const stressImages = new Map<Faces, string>();
 stressImages.set(Faces.STRESS_FAILURE_1, 'stress1');
-stressImages.set(Faces.FAILURE, 'redf');
-stressImages.set(Faces.SUCCESS, 'reds');
+stressImages.set(Faces.FAILURE, 'stressfail');
+stressImages.set(Faces.SUCCESS, 'stress6');
 
 export const dieRollImages = new Map<Dice, Map<Faces, string>>();
 dieRollImages.set(Dice.STRESS, stressImages);
